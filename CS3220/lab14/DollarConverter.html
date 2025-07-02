@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dollar Converter</title>
+  </head>
+  <body>
+    <input type="text" name="dollar" value="0" /> Dollar =
+    <span id="amount">0</span>
+    <select id="currency">
+      <option>EUR</option>
+      <option>GBP</option>
+      <option>INR</option>
+      <option>AUD</option>
+    </select>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var rates = {
+        EUR: 0.934,
+        GBP: 0.791,
+        INR: 64.659,
+        AUD: 1.326,
+      };
+    
+      $(function () {
+        function convert() {
+          const dollar = Number($('input[name="dollar"]').val());
+          const currency = $('#currency').val();
+          const rate = rates[currency];
+          const converted = dollar * rate;
+          $('#amount').text(converted.toFixed(2));
+        }
+    
+        $('input[name="dollar"]').on('keyup', convert);
+        $('#currency').on('change', convert);
+      });
+    </script>
+    
+  </body>
+</html>

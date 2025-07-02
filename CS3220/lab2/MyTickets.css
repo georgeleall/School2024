@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    color: green;
+    text-size-adjust: 50px;
+    background-color: lightgrey;
+}
+
+footer{
+    color: gray;
+    text-align: center;
+    background-color: white;
+}

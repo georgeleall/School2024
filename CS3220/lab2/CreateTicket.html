@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <!-- 
+George Leal
+Assignment: Week 2 Lab
+January 30th, 2025
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel = "stylesheet" href="MyTickets.css">
+    <title>Create Ticket</title>
+</head>
+
+<body class ="w3-container">
+    <header>
+        <h1><img src= "customer-support.png" alt="Customer Support Logo" height="30" width="auto"/> MyTickets</h1>
+    </header>
+    <main>
+        <h2><a href="ListTickets.html">Tickets</a> > Create Ticket</h2>
+
+        <form>
+            <fieldset>
+              <legend>Requester:</legend>
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" required><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" required><br>
+              <label for="phone">Phone Number:</label><br>
+              <input type="number" id="phone" required><br>
+            </fieldset>
+          </form>
+
+        <form>
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="Software">Software</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Facilities">Facilities</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <br><br>
+
+            <label for="details">Details:</label><br>
+            <textarea id="Details" name="Details" rows="4" cols="50" required></textarea>
+            <br><br>
+
+            <input type="submit" value="Create">
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; MyTickets 2025</p>
+        <p>Customer Service icon is created by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> 
+            from <a href="https://www.flaticon.com/">Flaticon</a></p>
+    </footer>
+
+</body>
+
+</html>
