@@ -1,0 +1,18 @@
+HW09 - General Questions
+Name: George Leal
+
+1) Although, I used very similar techniques for both abstract and interface in this assignment, after researching from different
+websites, I was able to see that one of the main differences between interface and abstract is that interface can only use 
+default/abstract/static methods meanwhile abstract can use various. Another difference is that, interface is pretty strict 
+about what it could inherit whereas abstract is a bit less strict. Finally, in abstract classes you can have instance variables
+and interface you can only have constants.
+
+2) Yes, it is required unless it is an abstract class.
+
+3) If a class extends an abstract class it must use abstract methods if the subclass isn't already abstract.
+
+4) No, you'd get an error.
+
+5) The difference is that implements is like a contract for abstract and extends shares functions from another class.
+Extends also inherits the properties of whatever you are extending and implements is like a set of rules.Although, they seem similar 
+they function differently.
